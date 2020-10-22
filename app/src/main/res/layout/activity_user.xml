@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.UserActivity">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profile_img"
+            android:src="@drawable/ic_user_profile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"
+            android:textSize="23sp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/profile_img"
+            app:layout_constraintTop_toTopOf="@+id/profile_img" />
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:text="@string/username"
+            android:textSize="23sp"
+            app:layout_constraintStart_toEndOf="@id/profile_img"
+            app:layout_constraintTop_toBottomOf="@+id/profile_name" />
+
+        <TextView
+            android:id="@+id/profile_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/no_id"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_img"
+            app:layout_constraintStart_toStartOf="@+id/profile_img"
+            app:layout_constraintTop_toBottomOf="@+id/profile_img" />
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:maxLines="2"
+            android:text="@string/email_gmail"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/profile_img"
+            app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+        <TextView
+            android:id="@+id/profile_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/phone"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/profile_img"
+            app:layout_constraintTop_toBottomOf="@+id/profile_email" />
+
+        <TextView
+            android:id="@+id/profile_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/website"
+            android:textSize="21sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/profile_img"
+            app:layout_constraintTop_toBottomOf="@+id/profile_id" />
+
+        <TextView
+            android:id="@+id/profile_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="16dp"
+            android:maxLines="3"
+            android:text="@string/address"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_img"
+            app:layout_constraintTop_toBottomOf="@+id/profile_website" />
+
+        <TextView
+            android:id="@+id/profile_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/latitude"
+            android:textSize="20sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/profile_img"
+            app:layout_constraintTop_toBottomOf="@+id/profile_address" />
+
+        <TextView
+            android:id="@+id/profile_longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/longitude"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/profile_latitude"
+            app:layout_constraintTop_toBottomOf="@+id/profile_address" />
+        <TextView
+            android:id="@+id/profile_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@id/profile_latitude"
+            app:layout_constraintTop_toBottomOf="@+id/profile_latitude" />
+        <TextView
+            android:id="@+id/profile_catchPhrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/catch_phrase"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@id/profile_latitude"
+            app:layout_constraintTop_toBottomOf="@+id/profile_company" />
+
+        <TextView
+            android:id="@+id/profile_bs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/bs_bs_bs_bs_bs_bs"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/profile_latitude"
+            app:layout_constraintTop_toBottomOf="@+id/profile_catchPhrase" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_bs">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/title_userTasks"
+            android:text="@string/user_s_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginStart="30dp"
+            android:textSize="21sp"
+            android:fontFamily="monospace"
+            app:layout_constraintTop_toBottomOf="@id/relativeLayout"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_userTasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_userTasks" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>
+
+
+

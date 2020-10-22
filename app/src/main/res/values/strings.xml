@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">TodDo App</string>
+    <string name="taskid_title">ID:</string>
+    <string name="user_icon">user icon</string>
+    <string name="status_title">Status:</string>
+    <string name="unknown_status">Unknown status</string>
+    <string name="title_text">Title</string>
+    <string name="id_title">ID:%1$d</string>
+    <string name="no_id">--</string>
+    <string name="user_name">User Name</string>
+    <string name="ava">ava</string>
+
+    <string name="hello_blank_fragment"> blank fragment 2</string>
+    <string name="user_bundle">USER_CLICKED</string>
+    <string name="statuse_done_msg">Status: Done!</string>
+    <string name="status_undone_msg">Status: In Progress…</string>
+    <string name="username">username</string>
+    <string name="email_gmail">email@gmail</string>
+    <string name="phone">+1234567890</string>
+    <string name="website">abcsefgh.com</string>
+    <string name="address">Long address street suite city zipcode</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="company">Company:</string>
+    <string name="catch_phrase">catch phrase</string>
+    <string name="bs_bs_bs_bs_bs_bs">bs bs bs bs bs bs</string>
+    <string name="user_s_tasks">User\'s tasks:</string>
+    <string name="bs_value">bs: %1$s</string>
+    <string name="prhase_text">Phrase:%1$s</string>
+    <string name="company_text">Company: %1$s</string>
+    <string name="lat_value">lat: %1$f</string>
+    <string name="lng_value">lng:%1$f</string>
+    <string name="address_values">"Address:%1$s, %2$s, %3$s. Zipcode: %4$s. "</string>
+</resources>
